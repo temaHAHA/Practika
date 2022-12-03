@@ -1,0 +1,19 @@
+#wrapepr{
+  width: 1000px;
+  margin: 30px auto;
+  border: 1px solid black;
+}
+
+#header{
+  height: 200px;
+  border: 1px solid black;
+}
+#footer{
+  height: 200px;
+  border: 1px solid black;
+}
+.text
+{
+  text-decoration: none;
+  color: #fb0266;
+}
