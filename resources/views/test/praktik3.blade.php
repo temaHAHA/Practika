@@ -17,7 +17,7 @@
                   </div>
                   <nav class="col-lg-10 d-flex justify-content-around flex-wrap">
                       <a href="/praktik2" class="text justify-content-center mx-2">О нас</a>
-                      <a href="/komic" class="text justify-content-center mx-2 ">Каталог</a>
+                      <a href="#" class="text justify-content-center mx-2 ">Каталог</a>
                       <a href="#" class="text justify-content-center mx-2">Товар</a>
                       <a href="#" class="text justify-content-center mx-2">Где нас найти?</a>
                       <a href="/login" class="text justify-content-center mx-2">Вход</a>
@@ -27,5 +27,17 @@
           </div>
       </div>
   </header>
+  <section>
+    <div class="container">
+    @foreach($comic as $comi)
+        <div class="d-flex justify-content-between">
+            <img src="{{ $comi['img'] }}" class="img-fluid d-block w-100" alt="...">
+            <h3>{{ $comi['name'] }}</h3>
+            <span>{{ $comi['price'] }}</span>
+            </div>
+        </div>
+    </div>
+    @endforeach
+  </section>
   </body>
 </html>

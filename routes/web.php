@@ -46,6 +46,10 @@ Route::match(['get', 'post'],'/all',[App\Http\Controllers\text::class,'all'] );
 
 Route::match(['get', 'post'],'/all',[App\Http\Controllers\text::class,'dfgdfg'] );
 Route::get('/hello', [App\Http\Controllers\Practik::class, 'hello']);
+Route::get('/praktik2', [App\Http\Controllers\ProductController::class, 'lora']);
+Route::get('/praktik3', [App\Http\Controllers\ProductController::class, 'kat']);
+Route::get('/komic', [App\Http\Controllers\ProductController::class, 'kola']);
+
 
 
 Auth::routes();
