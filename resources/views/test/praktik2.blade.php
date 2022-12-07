@@ -16,9 +16,9 @@
                       <img src="img/2.png" alt="" class="img-fluid">
                   </div>
                   <nav class="col-lg-10 d-flex justify-content-around flex-wrap">
-                      <a href="#" class="text justify-content-center mx-2">О нас</a>
-                      <a href="#" class="text justify-content-center mx-2 ">Каталог</a>
-                      <a href="#" class="text justify-content-center mx-2">Товар</a>
+                      <a href="/praktik2" class="text justify-content-center mx-2">О нас</a>
+                      <a href="/komic" class="text justify-content-center mx-2 ">Каталог</a>
+                      <a href="/praktik4" class="text justify-content-center mx-2">Товар</a>
                       <a href="#" class="text justify-content-center mx-2">Где нас найти?</a>
                       <a href="/login" class="text justify-content-center mx-2">Вход</a>
                       <a href="/register" class="text justify-content-center mx-2">Регистрация</a>
@@ -46,11 +46,19 @@
               <div id="carouselExampleControls" class="carousel w-25 h-25" data-bs-ride="carousel">
           <div class="carousel-inner">
             @foreach($comic as $comi)
+            @if($loop->first)
             <div class="carousel-item active">
               <img src="{{ $comi['img'] }}" class="img-fluid d-block w-100" alt="...">
               <h3>{{ $comi['name'] }}</h3>
               <span>{{ $comi['price'] }}</span>
             </div>
+            @else
+            <div class="carousel-item active">
+              <img src="{{ $comi['img'] }}" class="img-fluid d-block w-100" alt="...">
+              <h3>{{ $comi['name'] }}</h3>
+              <span>{{ $comi['price'] }}</span>
+            </div>
+            @endif
             @endforeach
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">

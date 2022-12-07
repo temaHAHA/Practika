@@ -11,9 +11,15 @@ class ProductController extends Controller
         return view('test.praktik2',['comic' =>$comic]);
     }
     
-    public function kola()
+    public function kola(Request $req)
     {
+        $sort = $req->input('sorted');
+        $optionSorted = $req->input('optionSorted');
         $comic=\App\Models\product::all();
-        return view('test.praktik3',['comic' =>$comic]);
+        return view('test.praktik3',['comic' =>$comic, 'sort'=>$sort, 'optionSorted'=>$optionSorted]);
+    }
+    public function tovar($id){
+        $comic=\App\Models\product::where("id_category", $id)->get();
+        return view('test.praktik4',['comic' =>$comic]);
     }
 }

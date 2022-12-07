@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Демо Bootstrap</title>
+
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link rel="stylesheet" href="public/css/style.css">
   </head>
@@ -27,5 +28,20 @@
           </div>
       </div>
   </header>
+  <section>
+    <div class="container">
+      <div class="d-flex">
+        <div>
+        @foreach($comic as $comi)
+          <div class="d-flex flex-column col-lg-3">
+              <img src="{{ $comi['img'] }}" class="img1 img-fluid d-block" alt="...">
+              <h3>{{ $comi['name'] }}</h3>
+              <span>{{ $comi['price'] }}</span>
+              </div>
+        @endforeach
+        </div>
+      </div>
+    </div>
+  </section>
   </body>
 </html>
