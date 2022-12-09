@@ -45,11 +45,13 @@ Route::match(['get', 'post'],'/all',[App\Http\Controllers\text::class,'all'] );
 
 
 Route::match(['get', 'post'],'/all',[App\Http\Controllers\text::class,'dfgdfg'] );
-Route::get('/hello', [App\Http\Controllers\Practik::class, 'hello']);
-Route::get('/praktik2', [App\Http\Controllers\ProductController::class, 'lora']);
-Route::match(['get', 'post'],'/praktik3', [App\Http\Controllers\ProductController::class, 'kat']);
+Route::get('/', [App\Http\Controllers\ProductController::class, 'lora']);
+Route::get('/aboutUs', [App\Http\Controllers\ProductController::class, 'lora']);
+Route::match(['get', 'post'],'/catalog', [App\Http\Controllers\ProductController::class, 'kat']);
 Route::match(['get', 'post'],'/komic', [App\Http\Controllers\ProductController::class, 'kola']);
-Route::get('/praktik4/{id}', [App\Http\Controllers\ProductController::class, 'tovar']);
+Route::get('/tov/{id}', [App\Http\Controllers\ProductController::class, 'tovar']);
+Route::get('/local', [App\Http\Controllers\ProductController::class, 'info']);
+Route::get('/product/sort/{name}/{nap}', [App\Http\Controllers\ProductController::class, 'price']);
 //Route::match(['get', 'post'],'/praktik4/{id}', [App\Http\Controllers\ProductController::class, 'kat']);
 
 

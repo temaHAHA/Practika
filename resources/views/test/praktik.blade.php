@@ -16,10 +16,10 @@
                       <img src="img/2.png" alt="" class="img-fluid">
                   </div>
                   <nav class="col-lg-10 d-flex justify-content-around flex-wrap">
-                      <a href="/praktik2" class="text justify-content-center mx-2">О нас</a>
+                      <a href="/aboutUs" class="text justify-content-center mx-2">О нас</a>
                       <a href="/komic" class="text justify-content-center mx-2 ">Каталог</a>
-                      <a href="/praktik4" class="text justify-content-center mx-2">Товар</a>
-                      <a href="#" class="text justify-content-center mx-2">Где нас найти?</a>
+                      <a href="/catalog" class="text justify-content-center mx-2">Товар</a>
+                      <a href="/local" class="text justify-content-center mx-2">Где нас найти?</a>
                       <a href="/login" class="text justify-content-center mx-2">Вход</a>
                       <a href="/register" class="text justify-content-center mx-2">Регистрация</a>
                   </nav>

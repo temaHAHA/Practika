@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -23,6 +24,11 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                <nav class="col-lg-4 d-flex justify-content-around flex-wrap">
+                    <a href="/aboutUs" class="text justify-content-center mx-2">О нас</a>
+                    <a href="/komic" class="text justify-content-center mx-2 ">Каталог</a>
+                    <a href="/local" class="text justify-content-center mx-2">Где нас найти?</a>
+                </nav>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,6 +42,9 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+
+                        
+
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

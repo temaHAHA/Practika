@@ -12,7 +12,7 @@
   height: 200px;
   border: 1px solid black;
 }
-.text
+nav a
 {
   text-decoration: none;
   color: #fb0266;
@@ -25,4 +25,13 @@
 {
   width: 250px;
   height: 300px;
+}
+.map
+{
+  width: 50%;
+}
+.sorter
+{
+  text-decoration: none;
+  color: black;
 }
