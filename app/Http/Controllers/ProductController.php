@@ -31,4 +31,19 @@ class ProductController extends Controller
     public function info(){
         return view('test.local');
     }
+    public function admin(Request $request){
+        if ($request->isMethod('post')) {
+            $text = $request->input('login');
+            $password = $request->input('password');
+            if ($text == 'admin' and $password == 'admin88'){
+                return view('test.adminpanel');
+            }
+            else{
+                return view('test.admin');
+            }
+        }
+        else{
+            return view('test.admin');
+        }
+}
 }

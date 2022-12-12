@@ -21,9 +21,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                <img src="/public/img/2.png" alt="" class="logo1 img-fluid">
                 <nav class="col-lg-4 d-flex justify-content-around flex-wrap">
                     <a href="/aboutUs" class="text justify-content-center mx-2">О нас</a>
                     <a href="/komic" class="text justify-content-center mx-2 ">Каталог</a>

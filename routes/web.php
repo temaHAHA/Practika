@@ -53,7 +53,8 @@ Route::get('/tov/{id}', [App\Http\Controllers\ProductController::class, 'tovar']
 Route::get('/local', [App\Http\Controllers\ProductController::class, 'info']);
 Route::get('/product/sort/{name}/{nap}', [App\Http\Controllers\ProductController::class, 'price']);
 //Route::match(['get', 'post'],'/praktik4/{id}', [App\Http\Controllers\ProductController::class, 'kat']);
-
+Route::get('/admin', [App\Http\Controllers\ProductController::class, 'admin']);
+Route::match(['get', 'post'],'/admin', [App\Http\Controllers\ProductController::class, 'admin']);
 
 Auth::routes();
 
